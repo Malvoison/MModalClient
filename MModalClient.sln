@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MModalClientSPA", "MModalClientSPA\MModalClientSPA.csproj", "{78656749-A0F2-430B-B631-0A093942E86A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MModalClientHost", "MModalClientHost\MModalClientHost.csproj", "{6621EB2F-8E1A-47A2-B6E0-167DE7D703D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientHostCef", "ClientHostCef\ClientHostCef.csproj", "{F72E986A-DE89-4982-8BAE-6E25F5DEAAC1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MMSysTrayClient", "MMSysTrayClient\MMSysTrayClient.csproj", "{F587E627-1F57-44A4-BF79-BCE085C8DFF2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{05550A99-7062-48D3-96EF-EDB54CCDDC6E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SqlScripts", "SqlScripts", "{4A531A10-7535-4C91-8832-D19E8C5D0916}"
+	ProjectSection(SolutionItems) = preProject
+		ELMAH-1.2-db-SQLServer.sql = ELMAH-1.2-db-SQLServer.sql
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{78656749-A0F2-430B-B631-0A093942E86A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78656749-A0F2-430B-B631-0A093942E86A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78656749-A0F2-430B-B631-0A093942E86A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{78656749-A0F2-430B-B631-0A093942E86A}.Debug|x86.Build.0 = Debug|Any CPU
+		{78656749-A0F2-430B-B631-0A093942E86A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78656749-A0F2-430B-B631-0A093942E86A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78656749-A0F2-430B-B631-0A093942E86A}.Release|x86.ActiveCfg = Release|Any CPU
+		{6621EB2F-8E1A-47A2-B6E0-167DE7D703D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6621EB2F-8E1A-47A2-B6E0-167DE7D703D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6621EB2F-8E1A-47A2-B6E0-167DE7D703D4}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6621EB2F-8E1A-47A2-B6E0-167DE7D703D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6621EB2F-8E1A-47A2-B6E0-167DE7D703D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6621EB2F-8E1A-47A2-B6E0-167DE7D703D4}.Release|x86.ActiveCfg = Release|Any CPU
+		{F72E986A-DE89-4982-8BAE-6E25F5DEAAC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F72E986A-DE89-4982-8BAE-6E25F5DEAAC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F72E986A-DE89-4982-8BAE-6E25F5DEAAC1}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F72E986A-DE89-4982-8BAE-6E25F5DEAAC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F72E986A-DE89-4982-8BAE-6E25F5DEAAC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F72E986A-DE89-4982-8BAE-6E25F5DEAAC1}.Release|x86.ActiveCfg = Release|Any CPU
+		{F587E627-1F57-44A4-BF79-BCE085C8DFF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F587E627-1F57-44A4-BF79-BCE085C8DFF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F587E627-1F57-44A4-BF79-BCE085C8DFF2}.Debug|x86.ActiveCfg = Debug|x86
+		{F587E627-1F57-44A4-BF79-BCE085C8DFF2}.Debug|x86.Build.0 = Debug|x86
+		{F587E627-1F57-44A4-BF79-BCE085C8DFF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F587E627-1F57-44A4-BF79-BCE085C8DFF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F587E627-1F57-44A4-BF79-BCE085C8DFF2}.Release|x86.ActiveCfg = Release|x86
+		{F587E627-1F57-44A4-BF79-BCE085C8DFF2}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

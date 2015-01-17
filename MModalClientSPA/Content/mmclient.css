@@ -1,0 +1,87 @@
+﻿
+.mmclient-header {    
+    margin: 2px;
+    padding: 2px;    
+}
+
+.mmclient-footer {    
+    margin: 2px;
+    padding: 2px;    
+}
+
+.mmclient-textcontent-div {
+    margin: 2px;
+    padding: 2px;
+}
+
+.mmclient-textcontent-section-col {
+    float:left
+}
+
+.mmclient-view {
+    background-image: linear-gradient(to bottom right, #FFFFFF 0%, #3db10e);
+    border: 2px solid #000000;    
+}
+
+.mmclient-section-debug {
+    background: #b6ff00;
+}
+
+.mmclient-section-recorder {
+    margin: 2px;
+    padding: 2px;    
+    clear: both;
+}
+
+.mmclient-progress {
+    float: left;
+    background-image: linear-gradient(to right, rgb(0, 128, 0) 0%, #ffd800 60%, #ff0000 100%);
+}
+
+.mmclient-section-recorder-buttons {    
+    float: left;
+}
+
+.mmclient-aside-insovr {    
+    float: left;
+    margin: 2px;
+    padding: 2px;
+    border: 2px solid #000000;
+    text-align: center;
+}
+
+.mmclient-aside-time {
+    float: right;
+    margin: 2px;
+    padding: 2px;
+    border: 2px solid #000000;
+    text-align: center;
+    display: inline-block;
+}
+
+/* Reusable grid layout */
+.mmclient-grid {
+    margin: 2px;
+    padding: 2px;
+    border: 2px solid #000000;
+}
+
+.mmclient-col-1-3 {
+    width: 33.33%;
+} .mmclient-col-2-3 {
+      width: 66.67%;
+}
+
+.mmclient-col-1-3,
+.mmclient-col-2-3 {
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+.mmclient-grid,
+.mmclient-col-1-3,
+.mmclient-col-2-3 {
+    padding-left: 5px;
+    padding-right: 5px;
+}

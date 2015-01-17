@@ -1,0 +1,132 @@
+﻿<div >
+    <header class="mmclient-header">
+        <div>
+            <button type="button" class="btn bg-primary" ng-click="doSave()">
+                <span>Save</span>
+            </button>
+            <button type="button" class="btn btn-success" ng-click="doPend()">
+                <span>Pend</span>
+            </button>
+            <button type="button" class="btn btn-danger" ng-click="doCancel()">
+                <span>Cancel</span>
+            </button>
+
+            
+            <strong class="mmclient-textcontent-div">Playback Volume:</strong>
+
+            <input class="mmclient-textcontent-div" id="ex2" data-slider-id='ex2Slider' type="text" data-slider-min="1"
+                   data-slider-value="10" data-slider-max="100"
+                   data-slider-step="1" />
+                                    
+        </div>
+</header>
+
+    <section class="mmclient-textcontent-section-col">
+        <div class="mmclient-textcontent-div">
+            <span><strong>Patient Name: </strong></span>
+            <span >{{pev.pevFirstName}}&nbsp;</span>
+            <span> </span>
+            <span >{{pev.pevLastName}}</span>
+        </div>
+        <div class="mmclient-textcontent-div">
+            <strong>Patient Id: </strong>
+            <span>{{pev.pevPatientId}}</span>
+        </div>
+        <div class="mmclient-textcontent-div">
+            <strong>DOB (Age): </strong>
+            <span >{{pev.pevBirthDate}}&nbsp;</span>
+            <span>(</span>
+            <span>{{pev.pevAge}}</span>
+            <span>)</span>
+        </div>
+        <div class="mmclient-textcontent-div">
+            <strong>Gender: </strong>
+            <span>{{pev.pevSex}}</span>
+        </div>
+    </section>
+    <section class="mmclient-textcontent-section-col">
+        <div class="mmclient-textcontent-div">
+            <span><strong>Office Location: </strong></span>
+            <span>{{pev.pevOfficeLocation}}</span>
+        </div>
+        <div class="mmclient-textcontent-div">
+            <span><strong>Date of Service: </strong></span>
+            <span>{{pev.pevDateOfService}}</span>
+        </div>
+        <div class="mmclient-textcontent-div">
+            <span><strong>Dictation Context: </strong></span>
+            <span>{{pev.pevDictationContext}}</span>
+        </div>
+    </section>
+
+    <section class="mmclient-section-recorder">
+
+        <section>
+
+            <div class="progress">
+                <div id="vuMeter" class="progress-bar mmclient-progress" role="progressbar" style="width: 100%;">
+                    <span class="sr-only">100% Complete</span>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="mmclient-section-recorder-buttons">            
+            <div class="btn-toolbar" role="toolbar">
+                <div class="btn-group-lg">
+
+                    <button type="button" class="btn btn-danger" ng-disabled="recorder.disableRecord" ng-click="doRecord()">
+                        <span class="glyphicon glyphicon-record"></span>
+                    </button>
+                    <button type="button" class="btn btn-success" ng-disabled="recorder.disablePlay" ng-click="doPlay()">
+                        <span class="glyphicon glyphicon-play"></span>
+                    </button>
+                    <button type="button" class="btn btn-default" ng-disabled="recorder.disableStop" ng-click="doStop()">
+                        <span class="glyphicon glyphicon-stop"></span>
+                    </button>
+                    <button type="button" class="btn btn-default" ng-disabled="recorder.disableRewind" ng-click="doRewind()">
+                        <span class="glyphicon glyphicon-backward"></span>
+                    </button>
+                    <button type="button" class="btn btn-default" ng-disabled="recorder.disableFastForward" ng-click="doFastForward()">
+                        <span class="glyphicon glyphicon-forward"></span>
+                    </button>
+                    <button type="button" class="btn btn-default" ng-disabled="recorder.disableBeginning" ng-click="doBeginning()">
+                        <span class="glyphicon glyphicon-step-backward"></span>
+                    </button>
+                    <button type="button" class="btn btn-default" ng-disabled="recorder.disableEnd" ng-click="doEnd()">
+                        <span class="glyphicon glyphicon-step-forward"></span>
+                    </button>
+                </div>
+            </div>            
+        </section>
+
+        <aside class="mmclient-aside-insovr">
+            <div>
+                <span>{{recordingTimeDisplay}}</span>
+            </div>
+        </aside>
+        
+        <section>            
+            <input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="-1"                    
+                   data-slider-value="10" data-slider-max="100"                   
+                   data-slider-step="1"  />
+        </section>
+        
+    </section>
+
+    <section>
+        <div class="mmclient-textcontent-div">
+            <span class="mmclient-textcontent-div"><input type="checkbox" ng-checked="jobState.stat" />&nbsp;STAT</span>
+            <span class="mmclient-textcontent-div"><input type="checkbox" ng-checked="jobState.reviewRequired" />&nbsp;Review Required</span>
+        </div>
+    </section>
+
+    
+    <footer class="mmclient-footer">
+        <div class="mmclient-textcontent-div">
+            <strong>Status: </strong>
+            <span data-bind="text: progressRecorderStatus">{{recorder.recorderStatus}}</span>
+        </div>
+    </footer>
+    
+</div>

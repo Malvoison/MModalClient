@@ -1,0 +1,13 @@
+﻿<Window x:Class="ClientHostCef.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="clr-namespace:ClientHostCef.Views"
+        Title="M*Modal Client" Height="500" Width="800"         
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="ToolWindow">
+    <Grid>
+        <controls:BrowserView x:Name="BrowserViewControl"
+                              DataContext="{Binding ViewModel, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}">            
+        </controls:BrowserView>
+    </Grid>
+</Window>
